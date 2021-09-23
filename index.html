@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TẠO FORM</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="header">.:ĐĂNG KÝ NGƯỜI DÙNG:.</div>
+    <div class="row"></div>
+    <form class="form-action" action="">
+        <div class="tai-khoan ">
+            <div class="ten-dang-nhap">
+                <label for="dangnhap" class="dang-nhap">Tên đăng nhập : </label>
+                <input type="text" required id="dangnhap" onkeydown="this.style.backgroundColor='#ccc'">
+            </div>
+            <div class="mat-khau">
+                <label class="password" for="matkhau">Mật khẩu :</label>
+                <input type="password" class="password-1" required id="matkhau" onkeydown="this.style.backgroundColor='#ccc'">
+                <p class="note">(Tối thiểu 5 ký tự)</p>
+            </div>
+            <div class="go-lai">
+                <label for="golaimatkhau">Gõ lại mật khẩu :</label>
+                <input type="password" required id="golaimatkhau" onkeydown="this.style.backgroundColor='#ccc'">
+            </div>
+        </div>
+        <div class="row"></div>
+        <!--THONG TIN-->
+        <div class="thong-tin ">
+            <p class="content">::Nhập thông tin để lấy lại mật khẩu khi quên</p>
+            <div class="question fs-20">
+                <label for="cauhoi">Câu hỏi bí mật :</label>
+                <select name="" id="cauhoi" required>
+                     <option value="">[Chọn câu hỏi]</option>
+                     <option value="question1">Tên lúc nhỏ của bạn là gì?</option>
+                     <option value="question2">Trường Đại học bạn đang học tên là gì?</option>
+                     <option value="question3">Tên lúc nhỏ của bạn là gì?</option>
+                     <option value="question4">Bạn thích môn thể thao nào?</option>
+                </select>
+            </div>
+            <div class="tra-loi fs-20">
+                <label for="traloi">Trả lời :</label>
+                <input type="text" required id="traloi" onkeydown="this.style.backgroundColor='#ccc'">
+            </div>
+        </div>
+        <div class="row"></div>
+        <!--THONG TIN CA NHAN-->
+        <div class="thong-tin-ca-nhan ">
+            <p class="content ">::Thông tin cá nhân</p>
+            <div class="ho-ten fs-20 ">
+                <label for="hovachulot">Họ và chữ lót : </label>
+                <input type="text" required id="hovachulot" onkeydown="this.style.backgroundColor='#ccc'">
+            </div>
+            <div class="ten fs-20 ">
+                <label for="name">Tên : </label>
+                <input type="text" required id="name" onkeydown="this.style.backgroundColor='#ccc'">
+            </div>
+            <div class="ngay-sinh fs-20 ">
+                <label for="birth">Ngày sinh : </label>
+                <select name="" id="birth" required>
+                    <option value=""></option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                </select> ,
+                <input type="day" required> ,
+                <input type="year" required> (Month, DD, YYYY)
+            </div>
+            <div class="gioi-tinh fs-20">
+                <label for="">Giới tính : </label>
+                <input type="radio" name="sex" value="Nam" required> Nam
+                <input type="radio" name="sex" value="Nữ" required> Nữ
+            </div>
+            <div class="nghe-nghiep fs-20">
+                <label for="nghenghiep">Nghề nghiệp liên quan :</label>
+                <select name="" id="nghenghiep" required>
+                  <option value="">[Chọn ngành nghề] </option>
+                  <option value="question1">Ngành CNTT</option>
+                  <option value="question2">Ngành Điện</option>
+                </select>
+            </div>
+        </div>
+        <div class="row"></div>
+        <!--SO THICH-->
+        <div class="so-thich">
+            <p class="content">::Sở thích (tuỳ chọn)</p>
+            <div class="hobby fs-20">
+                <input type="checkbox" class="hobby-one"> Âm nhạc
+                <input type="checkbox" class="hobby-two"> Du lịch <br/>
+                <input type="checkbox" class="hobby-three"> Nghiên cứu
+                <input type="checkbox" class="hobby-four"> Kinh doanh
+            </div>
+        </div>
+        <div class="row"></div>
+        <div class="sign-up">
+            <input type="submit" value="Đăng ký" class="sign-up-one" id="dk">
+            <input type="reset" value="Xoá" class="delete">
+        </div>
+    </form>
+
+</body>
+<script>
+    var submit = document.getElementById("dk");
+    submit.onclick = function() {
+        alert(" Ban da dang ky thanh cong");
+
+    }
+</script>
+
+</html>
